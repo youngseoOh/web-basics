@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--문자 인코딩 설정-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--뷰포트 렌더링 방식 설정-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--페이지 제목 설정-->
+    <title>YouTube</title>
+    <!--파비콘 설정-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!--각 브라우저의 기본 스타일을 초기화-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- Google Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <div class="main_container">
+        <div class="section1">
+            <!-- 헤더 -->
+            <header>
+                <!-- 햄버거 바 아이콘 -->
+                <div id="btn--open" class="material-icons">
+                    menu
+                </div>
+                <!-- 햄버거 바 아이콘 -->
+                <div id="btn--close" class="material-icons">
+                    menu
+                </div>
+                <!-- 마이크 아이콘 -->
+                <div id="mic" class="material-icons">
+                    mic
+                </div>
+                <!-- 비디오 촬영 아이콘 -->
+                <div id="video" class="material-icons">
+                video_call
+                </div>
+                <!-- 앱 아이콘 -->
+                <div id="apps" class="material-icons">
+                    apps
+                </div>
+                <!-- 알림 아이콘-->
+                <div id="noti" class="material-icons">
+                    notifications
+                </div>
+                <!-- 계정 아이콘 -->
+                <div id="account" class="material-icons">
+                    account_circle
+                </div>
+                <!-- 유튜브 로고 -->
+                <a href="http://www.youtube.com"><img id="logo" src="img/youtube-logo.png" alt="유튜브로고"></a>
+                <!-- 검색창 -->
+                <span class="search">
+                    <input id="searchbox" type="text" placeholder=" 검색" />
+                    <span id="keyboard" class="material-icons">
+                        keyboard
+                    </span>
+                    <button class="button">
+                        <span id="search_button" class="material-icons">
+                            search
+                        </span>
+                    </button>
+                </span>
+            </header>
+        </div>
+        <div class="section2">
+            <!-- 사이드 메뉴 -->
+            <nav id="side__menu">
+            <!-- 사이드 메뉴 아이콘들 -->
+            <p><button class="btn" id="btn1"><div id="home" class="material-icons">
+                home</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;홈</button></p>
+            <p><button class="btn" id="btn2"><div id="compass" class="material-icons">
+                explore</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;탐색</button></p>
+            <p><button class="btn" id="btn3"><div id="subs" class="material-icons">
+                subscriptions</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;구독</button></p>
+            <p><button class="btn" id="btn4"><div id="video_library" class="material-icons">
+                video_library</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보관함</button></p>
+            <p><button class="btn" id="btn5"><div id="history" class="material-icons">
+                history</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;시청 기록</button></p>
+            <p><button class="btn" id="btn6"><div id="watch_later" class="material-icons">
+                watch_later</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;나중에 볼 동영상</button></p>
+            <p><button class="btn" id="btn7"><div id="good" class="material-icons">
+                thumb_up</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;좋아요 표시한 동영상</button></p>
+            <p><div id="구독">구독</div></p>
+            <p><button class="btn" id="btn8"><div id="music" class="material-icons">
+                music_note</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;음악</button></p>
+            <p><button class="btn" id="btn9"><div id="sports_filled" class="material-icons">
+                emoji_events</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스포츠</button></p>
+            <p><button class="btn" id="btn10"><div id="game_filled" class="material-icons">
+                sports_esports</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;게임</button></p>
+            <p><button class="btn" id="btn11"><div id="movie_filled" class="material-icons">
+                theaters</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;영화</button></p>
+            <p><div id="YOUTUBE더보기">YOUTUBE 더보기</div></p>
+            <p><button class="btn" id="btn12"><div id="premium" class="material-icons">
+                smart_display</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YouTube Premium</button></p>
+            <p><button class="btn" id="btn13"><div id="movie" class="material-icons">
+                theaters</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;영화</button></p>
+            <p><button class="btn" id="btn14"><div id="game" class="material-icons">
+                sports_esports</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;게임</button></p>
+            <p><button class="btn" id="btn15"><div id="live" class="material-icons">
+                settings_input_antenna</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;실시간</button></p>
+            <p><button class="btn" id="btn16"><div id="learn" class="material-icons">
+                lightbulb</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;학습</button></p>
+            <p><button class="btn" id="btn17"><div id="sports" class="material-icons">
+                emoji_events</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스포츠</button></p>
+            <p><button class="btn" id="btn18"><div id="settings" class="material-icons">
+                settings</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;설정</button></p>                         
+            <p><button class="btn" id="btn19"><div id="flag" class="material-icons">
+                flag</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;신고 기록</button></p>
+            <p><button class="btn" id="btn20"><div id="help" class="material-icons">
+                help</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;고객센터</button></p>
+            <p><button class="btn" id="btn21"><div id="feedback" class="material-icons">
+                feedback</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;의견 보내기</button></p>
+            <br>
+            <!-- Footer -->
+            <footer>
+            <div class="etc">
+                <span class="etc" id="etc1">정보</span> <span class="etc" id="etc2">보도자료</span> <span class="etc" id="etc3">저작권</span> <span class="etc" id="etc4">문의하기</span>
+                <span class="etc" id="etc5">크리에이터</span> <span class="etc" id="etc6">광고</span> <span class="etc" id="etc7">개발자</span>
+                <br>
+                <br>
+                <span class="etc" id="etc8">약관</span> <span class="etc" id="etc9">개인정보처리방침</span>
+                <span class="etc" id="etc10">정책 및 안전</span>
+                <br>
+                <span class="etc" id="etc11">YouYube 작동의 원리</span>
+                <span class="etc" id="etc12">새로운 기능 테스트하기</span>
+            </div>
+            <br>
+            <br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+            <div class="info">
+                <p>© 2021 Google LLC</p>
+                <p>CEO: 선다 피차이</p>
+                <p>주소: 1600 Amphitheatre</p>
+                <p>Parkway, Mountain View, CA</p>
+                <p>94043, USA.</p>
+                <p>전화: 080-822-1450(무료)</p>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            </footer>
+            </nav>
+        </div>
+        
+        <!-- 썸네일 화면 구성 -->
+        <div class="section3">
+            <div class="container">
+                <div class="item">
+                    <div class="subpic"><img src="img/1.JPG" alt=썸네일><span class="imtext" id="imtext_adv"><span id="out" class="material-icons">
+                        exit_to_app
+                        </span></span></div>
+                    <div class="ss_adv_title"><p>광고<span id="dots" class="material-icons">
+                        more_vert
+                        </span></p></div>
+                    <br>
+                    <div class="ss_adv_etc"><p>과제를 위한 방울이 사진</p></div>
+                    <div class="ss_adv_etc1"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;성신여대 컴퓨터공학과</p></div>
+                </div>
+                <div class="item">
+                    <div class="subpic"><img src="img/2.JPG" alt=썸네일><span class="imtext" id="imtext1">10:00</span></div>
+                    <span id="acc1" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 1</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/3.jpeg" alt=썸네일><span class="imtext" id="imtext2">10:00</span></div>
+                    <span id="acc2" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 2</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/4.jpeg" alt=썸네일><span class="imtext" id="imtext3">10:00</span></div>
+                    <span id="acc3" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 3</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/5.jpeg" alt=썸네일><span class="imtext" id="imtext4">10:00</span></div>
+                    <span id="acc4" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 4</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/6.jpg" alt=썸네일><span class="imtext" id="imtext5">10:00</span></div>
+                    <span id="acc5" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 5</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/7.jpg" alt=썸네일><span class="imtext" id="imtext6">10:00</span></div>
+                    <span id="acc6" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 6</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/8.JPG" alt=썸네일><span class="imtext" id="imtext7">10:00</span></div>
+                    <span id="acc7" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 7</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/9.jpeg" alt=썸네일><span class="imtext" id="imtext8">10:00</span></div>
+                    <span id="acc8" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 8</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/10.jpeg" alt=썸네일><span class="imtext" id="imtext9">10:00</span></div>
+                    <span id="acc9" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 9</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/11.jpeg" alt=썸네일><span class="imtext" id="imtext10">10:00</span></div>
+                    <span id="acc10" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 10</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+                <div class="item">
+                    <div class="subpic"><img src="img/12.JPG" alt=썸네일><span class="imtext" id="imtext11">10:00</span></div>
+                    <span id="acc11" class="material-icons">
+                        account_circle
+                    </span>
+                    <span class="ss_title">썸네일 11</span>
+                    <div class="ss_etc">
+                    <div class="channel"><p>오영서</p></div>
+                    <p>조회수 10만회 ・ 1년 전</p></div>
+                </div> 
+            </div>
+        </div>
+</body>
+</html>

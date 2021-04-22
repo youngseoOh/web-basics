@@ -1,0 +1,995 @@
+/* COMMON */
+
+body {
+    background: #f8f8f6;
+    height: 3000px;
+
+}
+
+.material-icons {
+    color: rgb(88, 85, 85);
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index: 1;
+}
+
+header img#logo {
+    width: 98px;
+    height: 37px;
+    margin: 0 70px;
+}
+
+header>.material-icons {
+    position: absolute;
+}
+
+header>.material-icons#btn--open {
+    margin-left: 24px;
+    top: 15px;
+    display: block;
+}
+
+header>.material-icons#btn--close {
+    margin-left: 24px;
+    top: 15px;
+    display: block;
+}
+
+header>.material-icons#mic {
+    right: 390px;
+    display: block;
+    font-size: 24px;
+}
+
+header>.material-icons#video {
+    right: 205px;
+    display: block;
+    font-size: 25px;
+}
+
+header>.material-icons#apps {
+    right: 155px;
+    display: block;
+    font-size: 25px;
+}
+
+header>.material-icons#noti {
+    right: 109px;
+    display: block;
+    font-size: 24px;
+}
+
+header>.material-icons#account {
+    right: 47px;
+    display: block;
+    font-size: 35px;
+}
+
+/* 검색창 */
+
+#searchbox {
+    width: 568px;
+    height: 25px;
+    font-size: 15px;
+    border-color: rgb(224, 224, 224);
+    border-width: 0.5px;
+    margin: 16px 135px;
+    outline-color: rgb(91, 128, 228);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+::placeholder {
+    color: rgb(148, 147, 147);
+}
+
+/* 검색 버튼 */
+
+.button {
+    width: 65px;
+    height: 29px;
+    background-color: rgb(248, 245, 245);
+    border-color: rgb(236, 235, 235);
+    border-width: 0.5px;
+    outline: none;
+    cursor: pointer;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: fixed;
+    margin: 16px -135.5px;
+} 
+
+button>.material-icons#search_button {
+    font-size: 20px;
+    color: rgb(128, 126, 126);
+    margin-top: 2px;
+}
+
+.button:hover {
+    background-color: rgb(238, 236, 236);
+}
+
+/* 검색창 안 키보드 */
+
+.material-icons#keyboard {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: -168px;
+    font-size: 23px;
+}
+
+#keyboard:hover {
+    color: rgb(46, 45, 45);
+}
+
+/* SIDE NAV */
+
+nav {
+    position: fixed;
+    top: 56px;
+    overflow-y: auto;
+    width: 240px;
+    background: white;
+    max-height: 100%;
+    transition: .2s;
+    font-size: 14px;
+    overscroll-behavior: contain;
+}
+
+#구독 {
+    margin: 10px 25px;
+    font-weight: 530;
+}
+
+#YOUTUBE더보기 {
+    margin: 10px 24px;
+    color: rgb(78, 78, 78);
+    font-weight: 600;
+}
+
+/* 사이드 바 아이콘 */
+
+.material-icons#home {
+    font-size: 25px;
+    padding: 3px;
+    color: rgb(255, 0, 0);
+}
+.material-icons#compass {
+    font-size: 24px;
+    padding: 3.5px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#subs {
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#video_library {
+    font-size: 23.5px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#history {
+    font-size: 21.5px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#watch_later {
+    font-size: 20px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#good {
+    font-size: 17.5px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#music {
+    font-size: 23px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#sports_filled {
+    font-size: 23px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#game_filled {
+    font-size: 23px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#movie_filled {
+    font-size: 23px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#premium {
+    font-size: 22px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#movie {
+    font-size: 23px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#game {
+    font-size: 23px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#live {
+    font-size: 22px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#learn {
+    font-size: 23px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#sports {
+    font-size: 27px;
+    padding: 1.5px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#settings {
+    font-size: 26x;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#flag {
+    font-size: 21.5px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#help {
+    font-size: 24px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+.material-icons#feedback {
+    font-size: 23px;
+    padding: 3px;
+    color: rgb(92, 91, 91);
+}
+
+/* 사이드바 하단 설명 */
+
+.etc {
+    color: rgb(100, 98, 98);
+    margin: 0 25px;
+    font-size: 13.2px;
+    line-height: 18px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#etc1 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc2 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc3 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc4 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc5 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc6 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc7 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc8 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc9 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc10 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc11 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+#etc12 {
+    cursor: pointer;
+    margin: 0.5px 2px;
+}
+
+.info {
+    color: rgb(156, 154, 154);
+    margin: 0 25px;
+    font-size: 13.7px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+/* 사이드 바 버튼 호버 */
+
+.btn#btn1:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn2:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn3:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn4:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn5:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn6:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn7:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn8:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn9:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn10:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn11:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn12:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn13:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn14:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn15:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn16:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn17:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn18:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn19:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn20:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.btn#btn21:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+
+/* 버튼 스타일 */
+
+button.btn#btn1 {
+    background-color: rgb(233, 231, 231);
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 140px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn2 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 129px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn3 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 130px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn4 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 119px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn5 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 105px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn6 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 69px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn7 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 49px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: none;
+}
+
+button.btn#btn8 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 131px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn9 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 119px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn10 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 131px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn11 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 131px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn12 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 47px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn13 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 131px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn14 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 131px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn15 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 121px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn16 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 131px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn17 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 118px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn18 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 130px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn19 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 105px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn20 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 107px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+button.btn#btn21 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 91px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+/* 전체적인 레이아웃 */
+
+.main_container {
+    display: grid;
+    grid-template-rows: 56px calc(100% - 56px);
+    grid-template-columns: 240px 1120px;
+    overscroll-behavior: contain;
+}
+
+.section1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.section2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.section3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* 썸네일 GRID */
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 272px 272px 272px 272px;
+    grid-template-rows: 260px 260px 260px 260px;
+    grid-row-gap: 45px;
+    grid-column-gap: 16px;
+    left: 24px;
+    top: 24px;
+}
+
+.item {
+    cursor: pointer;
+}
+
+/* 썸네일 사진 */
+
+img {
+    width: 272px;
+    height: 155px;
+}
+
+/* 썸네일 영상 시간 */
+
+.subpic {
+    position: relative;
+}
+
+.imtext#imtext1 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext2 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext3 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext4 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext5 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext6 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext7 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext8 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext9 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext10 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+.imtext#imtext11 {
+    position: absolute;
+    color: rgb(235, 232, 232);
+    font-weight: bold;
+    font-size: 13px;
+    left: 226.5px;
+    top: 133px;
+    padding: 4px 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+    padding-bottom: 2.2px;
+}
+
+/* 광고 웹페이지 나가기 아이콘 */
+
+.imtext#imtext_adv {
+    position: absolute;
+    color: white;
+    left: 233px;
+    top: 118px;
+    padding: 3px 4px;
+    border-radius: 2px;
+}
+
+.material-icons#out {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: black;
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+
+/* 광고 동영상 제목, 부가설명 */
+
+.item>.ss_adv_title {
+    font-size: 14.5px;
+    margin-top: 10px;
+}
+
+.item>.ss_adv_etc {
+    font-size: 14.5px;
+    color: rgb(82, 80, 80);
+}
+
+.item>.ss_adv_etc1 {
+    font-size: 14px;
+    color: rgb(82, 80, 80);
+    line-height: 27px;
+}
+
+/* 동영상 제목, 채널명, 조회수 */
+
+.item>.ss_etc {
+    font-size: 14px;
+    color: rgb(82, 80, 80);
+    line-height: 17px;
+    margin: 10px 45px;
+}
+
+.item>.ss_title {
+    font-size: 15px;
+}
+
+/* 채널명 hover */
+
+.channel:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* 광고 메뉴 */
+
+.material-icons#dots {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+}
+
+/* 동영상 계정 */
+
+.material-icons#acc1 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc2 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc3 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc4 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc5 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc6 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc7 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc8 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc9 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc10 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc11 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.material-icons#acc12 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
