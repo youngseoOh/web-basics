@@ -11,6 +11,36 @@ body {
     cursor: pointer;
 }
 
+/* 전체적인 레이아웃 */
+
+.main_container {
+    display: grid;
+    grid-template-rows: 56px calc(100% - 56px);
+    grid-template-columns: 240px 1120px;
+    overscroll-behavior: contain;
+}
+
+.section1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.section2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.section3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 /* HEADER */
 
 header {
@@ -144,131 +174,161 @@ nav {
     transition: .2s;
     font-size: 14px;
     overscroll-behavior: contain;
+    
 }
 
+/* 사이드바 글씨 */
+
 #구독 {
-    margin: 10px 25px;
-    font-weight: 530;
+    margin: 16px 25px;
+    font-weight: 580;
 }
 
 #YOUTUBE더보기 {
-    margin: 10px 24px;
+    margin: 14px 24px;
     color: rgb(78, 78, 78);
     font-weight: 600;
+}
+
+.nav_category {
+    font-size: 14px;
+    color: rgb(58, 58, 58);
+    padding-left: 30px;
 }
 
 /* 사이드 바 아이콘 */
 
 .material-icons#home {
     font-size: 25px;
-    padding: 3px;
+    padding-left: 16.5px;
     color: rgb(255, 0, 0);
+    vertical-align: middle;
 }
 .material-icons#compass {
     font-size: 24px;
-    padding: 3.5px;
+    padding-left: 17px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#subs {
     font-size: 20px;
-    padding: 5px;
+    padding-left: 20px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#video_library {
-    font-size: 23.5px;
-    padding: 3px;
+    font-size: 24px;
+    padding-left: 16.5px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#history {
     font-size: 21.5px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#watch_later {
     font-size: 20px;
-    padding: 3px;
+    padding-left: 19.5px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#good {
     font-size: 17.5px;
-    padding: 3px;
+    padding-left: 21px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#music {
     font-size: 23px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#sports_filled {
     font-size: 23px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#game_filled {
     font-size: 23px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#movie_filled {
     font-size: 23px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#premium {
     font-size: 22px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#movie {
     font-size: 23px;
-    padding: 3px;
+    padding-left: 17.5px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#game {
     font-size: 23px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#live {
     font-size: 22px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#learn {
     font-size: 23px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#sports {
     font-size: 27px;
-    padding: 1.5px;
+    padding-left: 15px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#settings {
     font-size: 26x;
-    padding: 3px;
+    padding-left: 17px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#flag {
     font-size: 21.5px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#help {
     font-size: 24px;
-    padding: 3px;
+    padding-left: 17px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 .material-icons#feedback {
     font-size: 23px;
-    padding: 3px;
+    padding-left: 18px;
     color: rgb(92, 91, 91);
+    vertical-align: middle;
 }
 
 /* 사이드바 하단 설명 */
 
 .etc {
-    color: rgb(100, 98, 98);
+    color: rgb(90, 89, 89);
     margin: 0 25px;
     font-size: 13.2px;
     line-height: 18px;
@@ -344,7 +404,7 @@ nav {
     font-weight: 400;
 }
 
-/* 사이드 바 버튼 호버 */
+/* 사이드바 버튼 호버 */
 
 .btn#btn1:hover {
     background-color: rgb(243, 240, 240);
@@ -431,267 +491,16 @@ nav {
 }
 
 
-/* 버튼 스타일 */
+/* 사이드바 버튼 스타일 */
 
-button.btn#btn1 {
-    background-color: rgb(233, 231, 231);
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 140px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn2 {
+button.btn {
     background-color: white;
     border: none;
     cursor: pointer;
-    padding-left: 21px;
-    padding-right: 129px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    width: 227px;
+    height: 43px;
+    text-align: left;
     outline: none;
-}
-
-button.btn#btn3 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 130px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn4 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 119px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn5 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 105px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn6 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 69px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn7 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 49px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    outline: none;
-}
-
-button.btn#btn8 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 131px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn9 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 119px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn10 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 131px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn11 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 131px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn12 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 47px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn13 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 131px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn14 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 131px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn15 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 121px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn16 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 131px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn17 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 118px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn18 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 130px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn19 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 105px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn20 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 107px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-button.btn#btn21 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding-left: 21px;
-    padding-right: 91px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    outline: none;
-}
-
-/* 전체적인 레이아웃 */
-
-.main_container {
-    display: grid;
-    grid-template-rows: 56px calc(100% - 56px);
-    grid-template-columns: 240px 1120px;
-    overscroll-behavior: contain;
-}
-
-.section1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.section2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.section3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
 }
 
 /* 썸네일 GRID */
@@ -867,7 +676,7 @@ img {
     padding-bottom: 2.2px;
 }
 
-/* 광고 웹페이지 나가기 아이콘 */
+/* 광고(첫번째 썸네일) 웹페이지 나가기 아이콘 */
 
 .imtext#imtext_adv {
     position: absolute;
@@ -911,11 +720,12 @@ img {
     font-size: 14px;
     color: rgb(82, 80, 80);
     line-height: 17px;
-    margin: 10px 45px;
+    margin: -6px 45px;
 }
 
 .item>.ss_title {
     font-size: 15px;
+    vertical-align: middle;
 }
 
 /* 채널명 hover */
@@ -924,72 +734,641 @@ img {
     color: rgb(0, 0, 0);
 }
 
-/* 광고 메뉴 */
+/* 광고 글씨 옆 메뉴 점 3개 아이콘 */
 
-.material-icons#dots {
+.material-icons#adv_dots {
     font-size: 23px;
     color: rgb(133, 131, 131);
+    vertical-align: middle;
+    margin-left: 220px;
 }
 
+/* item hover시 점 3개 아이콘 */
+
+.item:hover
+#dots {
+    display: block;
+}
+
+.item:hover
+.ss_etc {
+    margin-top: 7px;
+}
+
+#dots {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+/* 아이템 호버시 시계 아이콘 */
+
+.item:hover
+#imtext_clock {
+    display: block;
+}
+.item:hover
+#imtext_clock2 {
+    display: block;
+}
+.item:hover
+#imtext_clock3 {
+    display: block;
+}
+.item:hover
+#imtext_clock4 {
+    display: block;
+}
+.item:hover
+#imtext_clock5 {
+    display: block;
+}
+.item:hover
+#imtext_clock6 {
+    display: block;
+}
+.item:hover
+#imtext_clock7 {
+    display: block;
+}
+.item:hover
+#imtext_clock8 {
+    display: block;
+}
+.item:hover
+#imtext_clock9 {
+    display: block;
+}
+.item:hover
+#imtext_clock10 {
+    display: block;
+}
+.item:hover
+#imtext_clock11 {
+    display: block;
+}
+
+/* 아이템 호버시 리스트추가 아이콘 */
+
+.item:hover
+#imtext_addlist {
+    display: block;
+}
+.item:hover
+#imtext_addlist2 {
+    display: block;
+}
+.item:hover
+#imtext_addlist3 {
+    display: block;
+}
+.item:hover
+#imtext_addlist4 {
+    display: block;
+}
+.item:hover
+#imtext_addlist5 {
+    display: block;
+}
+.item:hover
+#imtext_addlist6 {
+    display: block;
+}
+.item:hover
+#imtext_addlist7 {
+    display: block;
+}
+.item:hover
+#imtext_addlist8 {
+    display: block;
+}
+.item:hover
+#imtext_addlist9 {
+    display: block;
+}
+.item:hover
+#imtext_addlist10 {
+    display: block;
+}
+.item:hover
+#imtext_addlist11 {
+    display: block;
+}
+
+/* 아이템 호버시 영상 시간 안보이게 */
+
+.item:hover
+#imtext1 {
+    display: none;
+}
+.item:hover
+#imtext2 {
+    display: none;
+}
+.item:hover
+#imtext3 {
+    display: none;
+}
+.item:hover
+#imtext4 {
+    display: none;
+}
+.item:hover
+#imtext5 {
+    display: none;
+}
+.item:hover
+#imtext6 {
+    display: none;
+}
+.item:hover
+#imtext7 {
+    display: none;
+}
+.item:hover
+#imtext8 {
+    display: none;
+}
+.item:hover
+#imtext9 {
+    display: none;
+}
+.item:hover
+#imtext10 {
+    display: none;
+}
+.item:hover
+#imtext11 {
+    display: none;
+}
+
+/* 리스트 추가 아이콘 메뉴 스타일 */
+
+.imtext#imtext_addlist {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist2 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist3 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist4 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist5 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist6 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist7 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist8 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist9 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist10 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+.imtext#imtext_addlist11 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 34px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none; 
+}
+
+/* 시게 아이콘 메뉴 스타일 */
+
+.imtext#imtext_clock {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock2 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock3 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock4 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock5 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock6 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock7 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock8 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock9 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock10 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+.imtext#imtext_clock11 {
+    position: absolute;
+    color: white;
+    left: 236px;
+    top: 2px;
+    padding: 3px 4px;
+    border-radius: 2px;
+    display: none;
+}
+
+ /* 시계 아이콘 */
+
+.material-icons#clock {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock2 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock3 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock4 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock5 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock6 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock7 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock8 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock9 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock10 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#clock11 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+
+ /* 리스트 추가 아이콘 */
+
+ .material-icons#addlist {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist2 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist3 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist4 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist5 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist6 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist7 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist8 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist9 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist10 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+.material-icons#addlist11 {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 2px;
+    border-radius: 2px;
+}
 /* 동영상 계정 */
 
 .material-icons#acc1 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc2 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc3 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc4 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc5 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc6 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc7 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc8 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc9 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc10 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc11 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
 
 .material-icons#acc12 {
     font-size: 40px;
     margin-top: 5px;
+    vertical-align: middle;
 }
-
