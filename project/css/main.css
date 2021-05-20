@@ -751,11 +751,141 @@ img {
 }
 
 .item:hover
+#dots2 {
+    display: block;
+}
+
+.item:hover
+#dots3 {
+    display: block;
+}
+
+.item:hover
+#dots4 {
+    display: block;
+}
+
+.item:hover
+#dots5 {
+    display: block;
+}
+
+.item:hover
+#dots6 {
+    display: block;
+}
+
+.item:hover
+#dots7 {
+    display: block;
+}
+
+.item:hover
+#dots8 {
+    display: block;
+}
+
+.item:hover
+#dots9 {
+    display: block;
+}
+
+.item:hover
+#dots10 {
+    display: block;
+}
+
+.item:hover
+#dots11 {
+    display: block;
+}
+
+.item:hover
 .ss_etc {
     margin-top: 7px;
 }
 
-#dots {
+.material-icons#dots {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots2 {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots3 {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots4 {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots5 {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots6 {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots7 {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots8 {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots9 {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots10 {
+    font-size: 23px;
+    color: rgb(133, 131, 131);
+    display: none;
+    text-align: right;
+    margin-top: -36px;
+}
+
+.material-icons#dots11 {
     font-size: 23px;
     color: rgb(133, 131, 131);
     display: none;
