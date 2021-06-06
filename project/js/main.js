@@ -1,14 +1,23 @@
 // 햄버거 바 아이콘 선택자
-const menuOpenEl = document.getElementById('btn--open')
+const menuOpenEl = document.getElementById('btn--open');
 // 햄버거 바 아이콘 선택자
-const menuCloseEl = document.getElementById('btn--close')
+const menuCloseEl = document.getElementById('btn--close');
 // 사이드 네비게이션 선택자
-const sideMenuEl = document.getElementById('side__menu')
-// 사이드 네비게이션 선택자
-const sideMenu2El = document.getElementById('side__menu2')
-
+const sideMenuEl = document.getElementById('side__menu');
+// 얇은 사이드 네비게이션 선택자
+const sideMenu2El = document.getElementsByTagName('ul');
+// scroll to top 선택자
 const $scrollToTop = document.querySelector(".scrollToTop");
+// 썸네일 그리드
+const gridContainer = document.querySelector('.container');
+// 썸네일 아이템
+const gridItems = document.querySelector('.item');
+// 썸네일 이미지
+const img = document.querySelector('img')
+// 전체적인 레이아웃
+const mainContainer = document.querySelector('.main_container')
 
+// scroll to top 클릭시 
 $scrollToTop.addEventListener("click", function () {
   window.scroll({
     top: 0,
@@ -17,22 +26,26 @@ $scrollToTop.addEventListener("click", function () {
   });
 });
 
-if (window.innerWidth >= 1300) {
-  // 햄버거 바 아이콘에 클릭 이벤트가 발생하면,
-  menuOpenEl.addEventListener("click", function(){
-    // 여는 햄버거 바 아이콘을 안 보이게 처리하고
-    menuOpenEl.style.display = 'none'
-    // 닫는 햄버거 바 아이콘을 보이게 처리하고
-    menuCloseEl.style.display = 'block'
-    // 사이드 메뉴를 숨깁니다
-    sideMenuEl.style.display = 'none'
-    // 얇은 사이드 메뉴를 보입니다
-    sideMenu2El.style.display = 'block'
-  })
-}
+// 햄버거 바 아이콘에 클릭 이벤트가 발생하면,
+menuCloseEl.addEventListener("click", function() {
+  // 닫는 햄버거 바 아이콘을 안 보이게 처리하고
+  menuCloseEl.style.display = 'none'
+  // 여는 햄버거 바 아이콘을 보이게 처리하고
+  menuOpenEl.style.display = 'block'
+  // 사이드 메뉴를 숨깁니다
+  sideMenuEl.style.display = 'none' 
+})
 
-/* 사이드 메뉴 클릭시 */
+// 햄버거 바 아이콘에 클릭 이벤트가 발생하면,
+menuOpenEl.addEventListener("click", function(){
+  // 여는 햄버거 바 아이콘을 안 보이게 처리하고
+  menuOpenEl.style.display = 'none'
+  // 닫는 햄버거 바 아이콘을 보이게 처리하고
+  menuCloseEl.style.display = 'block'
+  sideMenuEl.style.display = 'block' 
+})
 
+// 사이드 메뉴 클릭시 메뉴 이름, 아이콘 색 변하게 
 const btn1 = document.getElementById('home')
 const btn2 = document.getElementById('compass')
 const btn3 = document.getElementById('subs')
@@ -1022,23 +1035,26 @@ button21.addEventListener("click", function() {
   button21.style.backgroundColor = "rgb(212, 208, 208)"
 })
 
-/* 얇은 사이드 메뉴 클릭시 */
-
+// 얇은 사이드 네비게이션 
+// 얇은 사이드 네비게이션 버튼 선택자
 const button22 = document.getElementById('btn22')
 const button23 = document.getElementById('btn23')
 const button24 = document.getElementById('btn24')
 const button25 = document.getElementById('btn25')
 
+// 얇은 사이드 네비게이션 버튼 아이콘 선택자
 const menuHomeEl = document.getElementById('home2')
 const menuCompassEl = document.getElementById('subs2')
 const menuSubsEl = document.getElementById('compass2')
 const menuVideo_libraryEl = document.getElementById('video_library2')
 
+// 얇은 사이드 네비게이션 버튼 메뉴 이름 선택자
 const nav_category2_home = document.getElementById('nav_category2_home')
 const nav_category2_subs = document.getElementById('nav_category2_subs')
 const nav_category2_compass = document.getElementById('nav_category2_compass')
 const nav_category2_video_library = document.getElementById('nav_category2_video_library')
 
+// 사이드 네비게이션 각 버튼 클릭시 색 변하게
 button22.addEventListener("click", function() {
   menuHomeEl.style.color = "red"
   menuCompassEl.style.color = "rgb(92, 91, 91)"
@@ -1079,3 +1095,22 @@ button25.addEventListener("click", function() {
   nav_category2_compass.style.color = "rgb(92, 91, 91)"
   nav_category2_video_library.style.color = "red"
 })
+
+$(document).ready(function() {
+  var target = $("#side__menu")
+
+  // 버튼을 클릭하면 사이드 바 열림
+  $(document).on("click", "btn--open", function (e) {
+    target.show()
+    target.addClass('emphasized')
+  })
+
+  // 사이드 바 외부를 클릭하면 사이드바 닫힘
+  $(document).mouseup(function (e) {
+    if(target.has(e.target).length==0) {
+      target.hide()
+      target.removeClass('emphasized')
+    }
+  })
+})
+
