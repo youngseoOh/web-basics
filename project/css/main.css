@@ -3,7 +3,6 @@
 body {
     background: #f8f8f6;
     height: 3000px;
-
 }
 
 .material-icons {
@@ -1433,7 +1432,7 @@ button.btn {
         display: grid;
         grid-template-columns: 19vw 19vw 19vw 19vw;
         grid-template-rows: 260px 260px 260px 260px;
-        grid-row-gap: 1vw;
+        grid-row-gap: 3vw;
         grid-column-gap: 1vw;
         left: 24px;
         top: 24px;
@@ -1467,6 +1466,7 @@ button.btn {
         width: 19vw;
         height: 260px;
     }
+
     /* 썸네일 사진 */
     img {
         width: 19vw;
@@ -1710,7 +1710,7 @@ button.btn {
     /* 각 그리드 스타일 */
     .item {
         cursor: pointer;
-        width: 40vw;
+        width: 42vw;
         height: 300px;
     }
     
@@ -1762,7 +1762,7 @@ button.btn {
     /* 각 그리드 스타일 */
     .item {
         cursor: pointer;
-        width: 40vw;
+        width: 45vw;
         height: 300px;
     }
     /* 썸네일 사진 */
@@ -1865,8 +1865,8 @@ button#btn25:hover {
 .inner {
     width: 960px;
     margin: 0 auto;
-    height: 3000px;
     display: flex;
+    height: 3000px;
 }
 
 /* scroll to top 둥둥 뜨는 애니메이션 */
@@ -1890,6 +1890,7 @@ button#btn25:hover {
     display: inline-block;
     margin-top: auto;
     margin-left: auto;
+    cursor: pointer;
 }
 
 /* 너비에 따라 검색창 사이즈가 줄어들게 */

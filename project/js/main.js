@@ -13,18 +13,9 @@ const gridContainer = document.querySelector('.container');
 // 썸네일 아이템
 const gridItems = document.querySelector('.item');
 // 썸네일 이미지
-const img = document.querySelector('img')
+const img = document.querySelector('.img')
 // 전체적인 레이아웃
 const mainContainer = document.querySelector('.main_container')
-
-// scroll to top 클릭시 
-$scrollToTop.addEventListener("click", function () {
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-});
 
 // 햄버거 바 아이콘에 클릭 이벤트가 발생하면,
 menuCloseEl.addEventListener("click", function() {
@@ -33,7 +24,7 @@ menuCloseEl.addEventListener("click", function() {
   // 여는 햄버거 바 아이콘을 보이게 처리하고
   menuOpenEl.style.display = 'block'
   // 사이드 메뉴를 숨깁니다
-  sideMenuEl.style.display = 'none' 
+  sideMenuEl.style.display = 'none'
 })
 
 // 햄버거 바 아이콘에 클릭 이벤트가 발생하면,
@@ -42,9 +33,30 @@ menuOpenEl.addEventListener("click", function(){
   menuOpenEl.style.display = 'none'
   // 닫는 햄버거 바 아이콘을 보이게 처리하고
   menuCloseEl.style.display = 'block'
+  // 사이드 메뉴를 보입니다
   sideMenuEl.style.display = 'block' 
 })
 
+// 햄버거 바 클릭시 사이드 바 닫기 + grid 변화
+menuCloseEl.addEventListener("click", function() {
+  gridContainer.style.gridTemplateColumns = "23vw 23vw 23vw 23vw"
+  mainContainer.style.gridTemplateColumns = "70px 1300px"
+  gridContainer.style.gridRowGap = " 3vw"
+  gridContainer.style.gridColumnGap = "1vw"
+  gridItems.style.width = "23vw"
+  gridItems.style.height = "260px"
+  })
+
+// 햄버거 바 클릭시 사이드 바 열기 + grid 변화
+menuOpenEl.addEventListener("click", function() {
+  gridContainer.style.gridTemplateColumns = "19vw 19vw 19vw 19vw"
+  mainContainer.style.gridTemplateColumns = "240px 1120px"
+  gridContainer.style.gridRowGap = " 6vw"
+  gridContainer.style.gridColumnGap = "1vw"
+  gridItems.style.width = "19vw"
+  gridItems.style.height = "260px"
+  })
+  
 // 사이드 메뉴 클릭시 메뉴 이름, 아이콘 색 변하게 
 const btn1 = document.getElementById('home')
 const btn2 = document.getElementById('compass')
@@ -1096,21 +1108,11 @@ button25.addEventListener("click", function() {
   nav_category2_video_library.style.color = "red"
 })
 
-$(document).ready(function() {
-  var target = $("#side__menu")
-
-  // 버튼을 클릭하면 사이드 바 열림
-  $(document).on("click", "btn--open", function (e) {
-    target.show()
-    target.addClass('emphasized')
-  })
-
-  // 사이드 바 외부를 클릭하면 사이드바 닫힘
-  $(document).mouseup(function (e) {
-    if(target.has(e.target).length==0) {
-      target.hide()
-      target.removeClass('emphasized')
-    }
-  })
-})
-
+// scroll to top 클릭시 
+$scrollToTop.addEventListener("click", function () {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
