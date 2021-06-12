@@ -4,17 +4,13 @@ const menuOpenEl = document.getElementById('btn--open');
 const menuCloseEl = document.getElementById('btn--close');
 // 사이드 네비게이션 선택자
 const sideMenuEl = document.getElementById('side__menu');
-// 얇은 사이드 네비게이션 선택자
-const sideMenu2El = document.getElementsByTagName('ul');
 // scroll to top 선택자
 const $scrollToTop = document.querySelector(".scrollToTop");
-// 썸네일 그리드
+// 썸네일 그리드 선택자
 const gridContainer = document.querySelector('.container');
-// 썸네일 아이템
+// 썸네일 아이템 선택자
 const gridItems = document.querySelector('.item');
-// 썸네일 이미지
-const img = document.querySelector('.img')
-// 전체적인 레이아웃
+// 전체적인 레이아웃 선택자
 const mainContainer = document.querySelector('.main_container')
 
 // 햄버거 바 아이콘에 클릭 이벤트가 발생하면,
@@ -57,7 +53,7 @@ menuOpenEl.addEventListener("click", function() {
   gridItems.style.height = "260px"
   })
   
-// 사이드 메뉴 클릭시 메뉴 이름, 아이콘 색 변하게 
+// 사이드 바 각 메뉴 버튼 아이콘 선택자
 const btn1 = document.getElementById('home')
 const btn2 = document.getElementById('compass')
 const btn3 = document.getElementById('subs')
@@ -80,6 +76,7 @@ const btn19 = document.getElementById('flag')
 const btn20 = document.getElementById('help')
 const btn21 = document.getElementById('feedback')
 
+// 사이드 바 각 메뉴 버튼 선택자
 const button1 = document.getElementById('btn1')
 const button2 = document.getElementById('btn2')
 const button3 = document.getElementById('btn3')
@@ -102,6 +99,7 @@ const button19 = document.getElementById('btn19')
 const button20 = document.getElementById('btn20')
 const button21 = document.getElementById('btn21')
 
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button1.addEventListener("click", function() {
   btn1.style.color = "red"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -146,7 +144,7 @@ button1.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button2.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "red"
@@ -191,7 +189,7 @@ button2.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button3.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -236,7 +234,7 @@ button3.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button4.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -281,7 +279,7 @@ button4.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button5.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -326,7 +324,7 @@ button5.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button6.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -371,7 +369,7 @@ button6.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button7.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -416,7 +414,7 @@ button7.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button8.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -461,7 +459,7 @@ button8.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button9.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -506,7 +504,7 @@ button9.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button10.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -551,7 +549,7 @@ button10.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button11.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -596,7 +594,7 @@ button11.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button12.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -641,7 +639,7 @@ button12.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button13.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -686,7 +684,7 @@ button13.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button14.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -731,7 +729,7 @@ button14.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button15.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -776,7 +774,7 @@ button15.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button16.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -821,7 +819,7 @@ button16.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button17.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -866,7 +864,7 @@ button17.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button18.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -911,7 +909,7 @@ button18.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button19.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -956,7 +954,7 @@ button19.addEventListener("click", function() {
   button20.style.backgroundColor = "white"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button20.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -1001,7 +999,7 @@ button20.addEventListener("click", function() {
   button20.style.backgroundColor = "rgb(212, 208, 208)"
   button21.style.backgroundColor = "white"
 })
-
+// 사이드 메뉴 버튼 클릭시 아이콘 색, 배경색 변하게 
 button21.addEventListener("click", function() {
   btn1.style.color = "rgb(92, 91, 91)"
   btn2.style.color = "rgb(92, 91, 91)"
@@ -1048,13 +1046,13 @@ button21.addEventListener("click", function() {
 })
 
 // 얇은 사이드 네비게이션 
-// 얇은 사이드 네비게이션 버튼 선택자
+// 얇은 사이드 네비게이션 메뉴 버튼 선택자
 const button22 = document.getElementById('btn22')
 const button23 = document.getElementById('btn23')
 const button24 = document.getElementById('btn24')
 const button25 = document.getElementById('btn25')
 
-// 얇은 사이드 네비게이션 버튼 아이콘 선택자
+// 얇은 사이드 네비게이션 메뉴 버튼 아이콘 선택자
 const menuHomeEl = document.getElementById('home2')
 const menuCompassEl = document.getElementById('subs2')
 const menuSubsEl = document.getElementById('compass2')
@@ -1077,6 +1075,7 @@ button22.addEventListener("click", function() {
   nav_category2_compass.style.color = "rgb(92, 91, 91)"
   nav_category2_video_library.style.color = "rgb(92, 91, 91)"
 })
+// 사이드 네비게이션 각 버튼 클릭시 색 변하게
 button24.addEventListener("click", function() {
   menuHomeEl.style.color = "rgb(92, 91, 91)"
   menuCompassEl.style.color = "red"
@@ -1087,6 +1086,7 @@ button24.addEventListener("click", function() {
   nav_category2_compass.style.color = "rgb(92, 91, 91)"
   nav_category2_video_library.style.color = "rgb(92, 91, 91)"
 })
+// 사이드 네비게이션 각 버튼 클릭시 색 변하게
 button23.addEventListener("click", function() {
   menuHomeEl.style.color = "rgb(92, 91, 91)"
   menuCompassEl.style.color = "rgb(92, 91, 91)"

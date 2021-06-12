@@ -22,6 +22,7 @@ header {
     z-index: 1;
 }
 
+/* 유튜브 로고 이미지 */
 header img#logo {
     width: 98px;
     height: 37px;
@@ -29,6 +30,7 @@ header img#logo {
     cursor: pointer;
 }
 
+/* 헤더에 있는 아이콘 */
 header>.material-icons {
     position: absolute;
 }
@@ -615,7 +617,7 @@ button.btn {
     margin-left: 220px;
 }
 
-/* item hover시 점 3개 아이콘 보이게 */
+/* item(썸네일) hover시 점 3개 아이콘 보이게 */
 
 .item:hover
 #dots {
@@ -676,7 +678,7 @@ button.btn {
 .ss_etc {
     margin-top: 7px;
 }
-
+/* 각 동영상마다 점 3개 아이콘(더보기 아이콘) */
 .material-icons#dots {
     font-size: 23px;
     color: rgb(133, 131, 131);
@@ -765,7 +767,7 @@ button.btn {
     margin-top: -36px;
 }
 
-/* 아이템 호버시 썸네일에 시계 아이콘 보이게 */
+/* 아이템(썸네일) 호버시 썸네일에 시계 아이콘 보이게 */
 
 .item:hover
 #imtext_clock {
@@ -1774,7 +1776,7 @@ button.btn {
 
 /* 접었을 때 나오는 얇은 사이드 nav */
 
-/* 사이드 바 아이콘 */
+/* 얇은 사이드 바 아이콘 */
 .material-icons#home2 {
     font-size: 25px;
     text-align: center;
@@ -1815,7 +1817,7 @@ button.btn {
     color: rgb(92, 91, 91);
 }
 
-/* 버튼 스타일 */
+/* 얇은 사이드 바 버튼 스타일 */
 button#btn22 {
     background-color: white;
     border: none; 
@@ -1843,7 +1845,7 @@ button#btn25 {
     height: 72px;
     width: 70px;
 }
-/* 버튼 호버시 */
+/* 얇은 사이드 바 버튼 호버시 */
 button#btn22:hover {
     background-color: rgb(243, 240, 240);
     cursor: pointer;
