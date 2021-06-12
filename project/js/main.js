@@ -15,43 +15,41 @@ const mainContainer = document.querySelector('.main_container')
 
 // 햄버거 바 아이콘에 클릭 이벤트가 발생하면,
 menuCloseEl.addEventListener("click", function() {
-  // 닫는 햄버거 바 아이콘을 안 보이게 처리하고
-  menuCloseEl.style.display = 'none'
-  // 여는 햄버거 바 아이콘을 보이게 처리하고
-  menuOpenEl.style.display = 'block'
-  // 사이드 메뉴를 숨깁니다
-  sideMenuEl.style.display = 'none'
+  if (window.innerWidth >= 1300) {
+    // 닫는 햄버거 바 아이콘을 안 보이게 처리하고
+    menuCloseEl.style.display = 'none'
+    // 여는 햄버거 바 아이콘을 보이게 처리하고
+    menuOpenEl.style.display = 'block'
+    // 사이드 메뉴를 숨깁니다
+    sideMenuEl.style.display = 'none'
+    // 햄버거 바 클릭시 사이드 바 닫기 + grid 변화
+    gridContainer.style.gridTemplateColumns = "23vw 23vw 23vw 23vw"
+    mainContainer.style.gridTemplateColumns = "70px 1300px"
+    gridContainer.style.gridRowGap = " 3vw"
+    gridContainer.style.gridColumnGap = "1vw"
+    gridItems.style.width = "23vw"
+    gridItems.style.height = "260px"
+  }
 })
 
 // 햄버거 바 아이콘에 클릭 이벤트가 발생하면,
 menuOpenEl.addEventListener("click", function(){
-  // 여는 햄버거 바 아이콘을 안 보이게 처리하고
-  menuOpenEl.style.display = 'none'
-  // 닫는 햄버거 바 아이콘을 보이게 처리하고
-  menuCloseEl.style.display = 'block'
-  // 사이드 메뉴를 보입니다
-  sideMenuEl.style.display = 'block' 
+  if (window.innerWidth >= 1300) {
+    // 여는 햄버거 바 아이콘을 안 보이게 처리하고
+    menuOpenEl.style.display = 'none'
+    // 닫는 햄버거 바 아이콘을 보이게 처리하고
+    menuCloseEl.style.display = 'block'
+    // 사이드 메뉴를 보입니다
+    sideMenuEl.style.display = 'block'
+    // 햄버거 바 클릭시 사이드 바 열기 + grid 변화
+    gridContainer.style.gridTemplateColumns = "19vw 19vw 19vw 19vw"
+    mainContainer.style.gridTemplateColumns = "240px 1120px"
+    gridContainer.style.gridRowGap = " 6vw"
+    gridContainer.style.gridColumnGap = "1vw"
+    gridItems.style.width = "19vw"
+    gridItems.style.height = "260px" 
+  }
 })
-
-// 햄버거 바 클릭시 사이드 바 닫기 + grid 변화
-menuCloseEl.addEventListener("click", function() {
-  gridContainer.style.gridTemplateColumns = "23vw 23vw 23vw 23vw"
-  mainContainer.style.gridTemplateColumns = "70px 1300px"
-  gridContainer.style.gridRowGap = " 3vw"
-  gridContainer.style.gridColumnGap = "1vw"
-  gridItems.style.width = "23vw"
-  gridItems.style.height = "260px"
-  })
-
-// 햄버거 바 클릭시 사이드 바 열기 + grid 변화
-menuOpenEl.addEventListener("click", function() {
-  gridContainer.style.gridTemplateColumns = "19vw 19vw 19vw 19vw"
-  mainContainer.style.gridTemplateColumns = "240px 1120px"
-  gridContainer.style.gridRowGap = " 6vw"
-  gridContainer.style.gridColumnGap = "1vw"
-  gridItems.style.width = "19vw"
-  gridItems.style.height = "260px"
-  })
   
 // 사이드 바 각 메뉴 버튼 아이콘 선택자
 const btn1 = document.getElementById('home')
